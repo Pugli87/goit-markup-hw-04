@@ -178,7 +178,13 @@ display: flex;
 
 .section-title{
     text-align: center; 
-    background: var(--background-2);
+    /* background: var(--background-2);     */
+    /* background: rgba(47, 48, 58, 0.4); */
+    background-image: linear-gradient(70deg,rgba(47, 48, 58, 0.4),rgba(3, 0, 0, 0.4)), url("../imagenes/Imagen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./imagenes/Imagen.jpg);
+    background-size: 100% 100%; */
     letter-spacing: 0.06em;
 }
 
