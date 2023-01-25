@@ -312,56 +312,32 @@ a:hover, a:focus {
 }
 
 .products-list-img{
+    position: relative;
     flex-basis: calc((100% - 60px)/3);
 }
 
-.product-list-img>h3{
+.title-product{
+    display: flex;
+justify-content: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
     color: #FFFFFF;
-    width: 370px;
-    height: 70px;
     background: rgba(47, 48, 58, 0.8);
-}
-.title-product{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
 }
 
 /* -------------flex box---------------- */
 
-.title-product{  
-    /* padding: 27px auto; 
-    display: flex;
-    /* position: absolute; 
-    width: 370px;
-    height: 70px;
-    left: 215px;
-    top: 1435px;
-
-    background: rgba(47, 48, 58, 0.8); */
+.products-list-img > .title-product{  
+    width: 100%;
     position: absolute;
-    top: 0%;
-    width:370px;
+    bottom: 0%;
     padding: 27px 0;
-    background: rgba(47, 48, 58, 0.8);
-    margin: auto;
-    margin-top: 72%;
 }
 
 
@@ -459,25 +435,22 @@ a:hover, a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    /* border: 1px dashed #212121; */
 }
 
 .client-list {
-    display: flex; 
-    border-radius: 4px;
     flex-basis: calc(( 100% - 150px ) / 6);
 }
 
 .client-icon{
+    display: flex;
     width: 170px;
     height: 81px;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    display: flex;
+
     fill: #AFB1B8;
-    text-transform: uppercase;
 }
 
 .client-icon:hover, .client-icon:focus{
@@ -631,6 +604,7 @@ a:hover, a:focus {
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
+    color: var(--body-color);
 }
 
 .briefcase-list-text {
@@ -678,11 +652,10 @@ a:hover, a:focus {
     border: 1px solid #EEEEEE;
 } 
 
-.briefcase-list-item:hover, .briefcase-list-item:focus{
+.briefcase-list-item:hover, .card-set .briefcase-list-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
 .card-set h2{
